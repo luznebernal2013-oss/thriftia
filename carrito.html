@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras | Thriftia</title>
+
+    <link rel="icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/productos.js" defer></script>
+    <script src="js/principal.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor header_contenido">
+
+            <div class="marca">
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="Thriftia, ir a la portada"></a>
+                <p class="slogan-header">Tu prenda, tu historia y la que heredas; encuentra lo diferente, viste a tu manera, gasta menos.</p>
+            </div>
+
+            <nav>
+                <ul class="nav_lista">
+                    <li><a href="catalogo.html?genero=hombre" id="enlace-hombre">Hombre</a></li>
+                    <li><a href="catalogo.html?genero=mujer" id="enlace-mujer">Mujer</a></li>
+                    <li><a href="tu-estilo.html" id="enlace-estilo" class="btn-estilo">Match mi estilo</a></li>
+                    <li><a href="carrito.html" id="enlace-carrito" class="activo">🛒 Carrito <span id="contador-carrito" class="contador">0</span></a></li>
+                    <li><a href="tu-estilo.html" id="enlace-sesion" class="btn-sesion">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pagina contenedor">
+
+        <a href="index.html" class="btn-regreso">← Volver al inicio</a>
+        <h1>Tu carrito</h1>
+
+        <div id="carrito-lleno" class="carrito-contenido oculto">
+
+            <ul id="lista-carrito" class="lista-carrito"></ul>
+
+            <aside class="resumen">
+                <h2>Resumen</h2>
+                <p class="fila-resumen"><span id="resumen-cantidad">0 prendas</span> <span id="resumen-subtotal">$0</span></p>
+                <p class="fila-resumen envio"><span>🚚 Envío</span> <span id="resumen-envio">$0</span></p>
+                <p class="fila-resumen total"><span>Total</span> <span id="resumen-total">$0</span></p>
+
+                <button id="btn-pagar" class="btn-ancho">Pagar</button>
+
+                <div id="caja-nombre-pago" class="formulario oculto">
+
+                    <label for="campo-nombre-pago">Antes de pagar, ¿cuál es tu nombre?</label>
+                    <input type="text" id="campo-nombre-pago" placeholder="Escribe tu nombre">
+                    <p id="error-nombre-pago" class="error"></p>
+                    <button id="btn-confirmar-pago">Confirmar y pagar</button>
+                </div>
+            </aside>
+        </div>
+
+        <div id="carrito-vacio" class="mensaje-centro oculto">
+            <p class="mensaje-grande">Tu carrito está vacío</p>
+            <div class="botones-banner">
+                <a href="catalogo.html?genero=mujer" class="btn-primario">Mujer</a>
+                <a href="catalogo.html?genero=hombre" class="btn-primario">Hombre</a>
+                <a href="tu-estilo.html" class="btn-secundario">Match mi estilo</a>
+            </div>
+        </div>
+
+        <div id="confirmacion" class="mensaje-centro confirmacion oculto">
+            <h2 id="texto-gracias"></h2>
+            <p>Resumen de tu compra:</p>
+
+            <ul id="lista-comprada" class="lista-comprada"></ul>
+            <p class="envio">🚚 Envío: <span id="confirmacion-envio"></span></p>
+            <p class="total">Total pagado: <span id="confirmacion-total"></span></p>
+            <a href="index.html" class="btn-primario">Seguir comprando</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor footer_grid">
+
+            <div class="footer_bloque">
+                <img class="logo-pequeno" src="img/logo.png" alt="Logo de Thriftia">
+                <p>Tu prenda, tu historia y la que heredas; encuentra lo diferente, viste a tu manera, gasta menos.</p>
+            </div>
+
+            <div class="footer_bloque">
+                <h3>Contacto</h3>
+                <p>Calle 78C # 130-55, Bogotá, Colombia</p>
+                <p>WhatsApp: 57 1 32144260235</p>
+                <p>Devoluciones y soporte: <a href="mailto:luznebernal2013@gmail.com">luznebernal2013@gmail.com</a></p>
+            </div>
+
+            <div class="footer_bloque footer_enlaces">
+                <h3>Thriftia</h3>
+                <a href="quienes-somos.html">¿Quiénes somos?</a>
+                <a href="catalogo.html?genero=mujer">Mujer</a>
+                <a href="catalogo.html?genero=hombre">Hombre</a>
+                <a href="tu-estilo.html">Match mi estilo</a>
+            </div>
+        </div>
+
+        <p class="footer_copy">© 2026 Thriftia · Proyecto de clase</p>
+    </footer>
+
+</body>
+</html>

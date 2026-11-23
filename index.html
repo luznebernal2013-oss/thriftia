@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriftia | Ropa de segunda mano</title>
+
+    <link rel="icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/productos.js" defer></script>
+    <script src="js/principal.js" defer></script>
+    <script src="js/portada.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor header_contenido">
+
+            <div class="marca">
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="Thriftia, ir a la portada"></a>
+                <p class="slogan-header">Tu prenda, tu historia y la que heredas; encuentra lo diferente, viste a tu manera, gasta menos.</p>
+            </div>
+
+            <nav>
+                <ul class="nav_lista">
+                    <li><a href="catalogo.html?genero=hombre" id="enlace-hombre">Hombre</a></li>
+                    <li><a href="catalogo.html?genero=mujer" id="enlace-mujer">Mujer</a></li>
+                    <li><a href="tu-estilo.html" id="enlace-estilo" class="btn-estilo">Match mi estilo</a></li>
+                    <li><a href="carrito.html" id="enlace-carrito">🛒 Carrito <span id="contador-carrito" class="contador">0</span></a></li>
+                    <li><a href="tu-estilo.html" id="enlace-sesion" class="btn-sesion">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <div class="contenedor">
+
+                <p id="tituloSaludo" class="saludo"></p>
+
+                <h1 class="slogan-grande">
+                    Tu prenda, <span class="texto-naranja">tu historia…</span><br>
+                    <span class="texto-violeta">y la que heredas.</span>
+                </h1>
+
+                <p class="subtitulo-banner">
+                    Encuentra lo diferente · Viste a tu manera · <span class="pildora">Gasta menos</span>
+                </p>
+
+                <div id="banner-nuevo">
+                    <p class="frase-banner">Ropa de segunda mano revisada y en buen estado, para que armes tu estilo sin pagar de más.</p>
+                    <div class="botones-banner">
+                        <a href="tu-estilo.html" class="btn-primario btn-grande">Descubre tu estilo en 30 segundos</a>
+                        <a href="catalogo.html" class="btn-secundario">Ver prendas</a>
+                    </div>
+                    <p class="enlaces-banner">
+                        <a href="catalogo.html?genero=mujer">Ver Mujer</a>
+                        <a href="catalogo.html?genero=hombre">Ver Hombre</a>
+                    </p>
+                </div>
+
+                <div id="banner-estilo" class="oculto">
+                    <p class="frase-banner">Tu estilo es <strong id="nombre-estilo-banner" class="estilo-banner"></strong></p>
+                    <div class="botones-banner">
+                        <a href="catalogo.html" id="boton-mi-estilo" class="btn-primario btn-grande">Ver prendas de mi estilo</a>
+                    </div>
+                    <p class="enlaces-banner">
+                        <a href="tu-estilo.html">Repetir el quiz</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                <h2 class="centrado">¿Cuál es tu estilo?</h2>
+                <div class="grilla-estilos">
+
+                    <a href="catalogo.html?estilo=nomada" class="tarjeta tarjeta-estilo nomada">
+                        <img src="img/productos/04-chaqueta-impermeable.jpg" alt="Chaqueta impermeable, ejemplo del estilo Nómada">
+                        <h3>Nómada</h3>
+                        <p>Tu clóset está listo para salir: prendas prácticas, resistentes y en tonos tierra.</p>
+                    </a>
+
+                    <a href="catalogo.html?estilo=urbana" class="tarjeta tarjeta-estilo urbana">
+                        <img src="img/productos/11-camiseta-estampada.jpg" alt="Camiseta estampada, ejemplo del estilo Urbana">
+                        <h3>Urbana</h3>
+                        <p>La ciudad es tu pasarela: tenis, oversize y actitud.</p>
+                    </a>
+
+                    <a href="catalogo.html?estilo=chill" class="tarjeta tarjeta-estilo chill">
+                        <img src="img/productos/17-sudadera-oversize.jpg" alt="Sudadera oversize, ejemplo del estilo Chill">
+                        <h3>Chill</h3>
+                        <p>Comodidad primero, sin perder el estilo: telas suaves y cortes amplios.</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-blanca">
+            <div class="contenedor">
+                <h2 class="centrado">¿Cómo funciona?</h2>
+                <div class="pasos">
+                    <div class="paso">
+                        <p class="paso-icono">🔍</p>
+                        <h3>1. Descubre tu estilo</h3>
+                        <p>Responde 5 preguntas rápidas en el juego Match mi estilo.</p>
+                    </div>
+                    <div class="paso">
+                        <p class="paso-icono">👕</p>
+                        <h3>2. Elige prendas únicas</h3>
+                        <p>Cada prenda es de segunda mano y hay una sola de cada una.</p>
+                    </div>
+                    <div class="paso">
+                        <p class="paso-icono">💸</p>
+                        <h3>3. Compra y gasta menos</h3>
+                        <p>Agrégala al carrito y llévala a un precio que sí puedes pagar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                <div class="titulo-con-boton">
+                    <h2>Recién llegadas</h2>
+                    <a href="catalogo.html" class="btn-secundario">Ver todo</a>
+                </div>
+                <div id="area-destacadas" class="area-productos"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor footer_grid">
+
+            <div class="footer_bloque">
+                <img class="logo-pequeno" src="img/logo.png" alt="Logo de Thriftia">
+                <p>Tu prenda, tu historia y la que heredas; encuentra lo diferente, viste a tu manera, gasta menos.</p>
+            </div>
+
+            <div class="footer_bloque">
+                <h3>Contacto</h3>
+                <p>Calle 78C # 130-55, Bogotá, Colombia</p>
+                <p>WhatsApp: 57 1 32144260235</p>
+                <p>Devoluciones y soporte: <a href="mailto:luznebernal2013@gmail.com">luznebernal2013@gmail.com</a></p>
+            </div>
+
+            <div class="footer_bloque footer_enlaces">
+                <h3>Thriftia</h3>
+                <a href="quienes-somos.html">¿Quiénes somos?</a>
+                <a href="catalogo.html?genero=mujer">Mujer</a>
+                <a href="catalogo.html?genero=hombre">Hombre</a>
+                <a href="tu-estilo.html">Match mi estilo</a>
+            </div>
+        </div>
+
+        <p class="footer_copy">© 2026 Thriftia · Proyecto de clase</p>
+    </footer>
+
+</body>
+</html>

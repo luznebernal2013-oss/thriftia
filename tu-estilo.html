@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match mi estilo | Thriftia</title>
+
+    <link rel="icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/productos.js" defer></script>
+    <script src="js/principal.js" defer></script>
+    <script src="js/quiz.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor header_contenido">
+
+            <div class="marca">
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="Thriftia, ir a la portada"></a>
+                <p class="slogan-header">Tu prenda, tu historia y la que heredas; encuentra lo diferente, viste a tu manera, gasta menos.</p>
+            </div>
+
+            <nav>
+                <ul class="nav_lista">
+                    <li><a href="catalogo.html?genero=hombre" id="enlace-hombre">Hombre</a></li>
+                    <li><a href="catalogo.html?genero=mujer" id="enlace-mujer">Mujer</a></li>
+                    <li><a href="tu-estilo.html" id="enlace-estilo" class="activo btn-estilo">Match mi estilo</a></li>
+                    <li><a href="carrito.html" id="enlace-carrito">🛒 Carrito <span id="contador-carrito" class="contador">0</span></a></li>
+                    <li><a href="tu-estilo.html" id="enlace-sesion" class="btn-sesion">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pagina contenedor">
+
+        <a href="index.html" class="btn-regreso">← Volver al inicio</a>
+
+        <section class="caja-juego">
+            <h1 class="etiqueta-juego">Match mi estilo</h1>
+
+            <div id="pantalla-inicio" class="formulario">
+                <h2>¿Nómada, Urbana o Chill?</h2>
+                <p>Responde 6 preguntas y descubre si eres Nómada, Urbana o Chill.</p>
+
+                <label for="campo-nombre">¿Cuál es tu nombre?</label>
+                <input type="text" id="campo-nombre" placeholder="Escribe tu nombre">
+
+                <p id="error-nombre" class="error"></p>
+
+                <button id="btn-empezar">Empezar</button>
+            </div>
+
+            <div id="pantalla-preguntas" class="oculto">
+                <p id="texto-progreso" class="texto-progreso"></p>
+                <h2 id="texto-pregunta"></h2>
+
+                <div class="opciones">
+                    <button id="btn-nomada" class="opcion"></button>
+                    <button id="btn-urbana" class="opcion"></button>
+                    <button id="btn-chill" class="opcion"></button>
+                </div>
+
+                <button id="btn-reiniciar" class="btn-secundario">Reiniciar</button>
+            </div>
+
+            <div id="pantalla-resultado" class="oculto">
+
+                <div id="caja-resultado" class="caja-resultado">
+                    <p id="texto-tu-estilo"></p>
+                    <h2 id="nombre-resultado" class="nombre-resultado"></h2>
+                    <p id="descripcion-resultado"></p>
+                </div>
+
+                <p id="texto-puntos" class="texto-puntos"></p>
+
+                <div class="botones-banner">
+                    <a id="btn-resultado-mujer" href="catalogo.html?genero=mujer" class="btn-primario">Ver prendas Mujer</a>
+                    <a id="btn-resultado-hombre" href="catalogo.html?genero=hombre" class="btn-primario">Ver prendas Hombre</a>
+                    <button id="btn-repetir" class="btn-secundario">Repetir el test</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor footer_grid">
+
+            <div class="footer_bloque">
+                <img class="logo-pequeno" src="img/logo.png" alt="Logo de Thriftia">
+                <p>Tu prenda, tu historia y la que heredas; encuentra lo diferente, viste a tu manera, gasta menos.</p>
+            </div>
+
+            <div class="footer_bloque">
+                <h3>Contacto</h3>
+                <p>Calle 78C # 130-55, Bogotá, Colombia</p>
+                <p>WhatsApp: 57 1 32144260235</p>
+                <p>Devoluciones y soporte: <a href="mailto:luznebernal2013@gmail.com">luznebernal2013@gmail.com</a></p>
+            </div>
+
+            <div class="footer_bloque footer_enlaces">
+                <h3>Thriftia</h3>
+                <a href="quienes-somos.html">¿Quiénes somos?</a>
+                <a href="catalogo.html?genero=mujer">Mujer</a>
+                <a href="catalogo.html?genero=hombre">Hombre</a>
+                <a href="tu-estilo.html">Match mi estilo</a>
+            </div>
+        </div>
+
+        <p class="footer_copy">© 2026 Thriftia · Proyecto de clase</p>
+    </footer>
+
+</body>
+</html>
